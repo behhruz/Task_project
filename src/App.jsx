@@ -12,15 +12,23 @@ import Carusel from "./Components/Carousel";
 import Yurak from "./Components/yurak";
 import PrivateRoute from "./Dashboard/PrivateRoute";
 import Proekt from "./Components/Proyekt";
+import CategoryPage from "./Components/CategoryPage"; // Dinamik kategoriya sahifasi
 
 function App() {
   return (
     <Routes>
+      {/* Auth pages */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/admin" element={<AdminPanel />} />
+
+      {/* Default redirect */}
       <Route path="/" element={<Navigate to="/login" />} />
+
+      {/* Favorites page */}
       <Route path="/yrak" element={<Yurak />} />
+
+      {/* Home page */}
       <Route
         path="/home"
         element={
@@ -37,6 +45,9 @@ function App() {
           </>
         }
       />
+
+      {/* Category page with dynamic routing */}
+      <Route path="/products/:category" element={<CategoryPage />} />
     </Routes>
   );
 }

@@ -30,23 +30,33 @@ const Proekt = () => {
           <h3 className="text-md font-semibold text-gray-800 mb-4">CATEGORY</h3>
           <ul className="space-y-2">
             <li>
-              <NavLink to="/sofa" className="text-gray-500 hover:text-teal-500">
-                Sofa
+              <NavLink to="/products/bed" className="text-gray-500 hover:text-teal-500">
+              Bed
               </NavLink>
             </li>
             <li>
-              <NavLink to="/armchair" className="text-gray-500 hover:text-teal-500">
-                Armchair
+              <NavLink to="/products/woodenchair" className="text-gray-500 hover:text-teal-500">
+              Wooden Chair
               </NavLink>
             </li>
             <li>
-              <NavLink to="/wing-chair" className="text-gray-500 hover:text-teal-500">
-                Wing Chair
+              <NavLink to="/products/devanchair" className="text-gray-500 hover:text-teal-500">
+              Devan Chair
               </NavLink>
             </li>
             <li>
-              <NavLink to="/desk-chair" className="text-gray-500 hover:text-teal-500">
-                Desk Chair
+              <NavLink to="/products/wingchair" className="text-gray-500 hover:text-teal-500">
+              Wing Chair
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products/parkchair" className="text-gray-500 hover:text-teal-500">
+              Park Chair
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products/deskchair" className="text-gray-500 hover:text-teal-500">
+              Desk Chair
               </NavLink>
             </li>
           </ul>
