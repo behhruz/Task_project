@@ -95,7 +95,7 @@ const Habar = () => {
       <div className="mt-4 flex items-center">
         <input
           type="text"
-          placeholder="Type a new message..."
+          placeholder="Type a new message...,"
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
           onKeyDown={handleKeyDown}
